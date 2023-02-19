@@ -110,8 +110,8 @@ along with Focus Mode.  If not, see <http://www.gnu.org/licenses/>.
 
     storage.local.get("customWebsites", function(items){
       if(items.customWebsites !== undefined){
-        items.customWebsites[id].on = checked;
-        // items.customWebsites[id].on = true;
+        // items.customWebsites[id].on = checked;
+        items.customWebsites[id].on = true;
 
         storage.local.set({"customWebsites": items.customWebsites});
       }
@@ -162,9 +162,9 @@ along with Focus Mode.  If not, see <http://www.gnu.org/licenses/>.
     var crosses = document.getElementsByClassName("table-cross");
 
     /* Skip the first element because we don't want to affect the first line */
-    for(var i = 1; i < crosses.length; i++){
-      crosses.item(i).addEventListener("click", deleteCustomWebsite);
-    }
+    // for(var i = 1; i < crosses.length; i++){
+    //   crosses.item(i).addEventListener("click", deleteCustomWebsite);
+    // }
 
     /* Checking event */
     var defaultCheckboxes = document.getElementById("defaultList").getElementsByClassName("checkbox");
