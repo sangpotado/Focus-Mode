@@ -110,8 +110,8 @@ along with Focus Mode.  If not, see <http://www.gnu.org/licenses/>.
 
     storage.local.get("customWebsites", function(items){
       if(items.customWebsites !== undefined){
-        // items.customWebsites[id].on = checked;
-        items.customWebsites[id].on = true;
+        items.customWebsites[id].on = checked;
+        // items.customWebsites[id].on = true;
 
         storage.local.set({"customWebsites": items.customWebsites});
       }
