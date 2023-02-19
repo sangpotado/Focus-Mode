@@ -56,7 +56,7 @@ along with Focus Mode.  If not, see <http://www.gnu.org/licenses/>.
         on = true;
       }
       else {
-        on = false;
+        on = true;
       }
 
       storage.local.set({"on": on, "blocked": 0});
